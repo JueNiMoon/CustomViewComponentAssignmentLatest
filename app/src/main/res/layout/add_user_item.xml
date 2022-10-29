@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.example.customviewcomponentassignment.views.component.RoundedCornerImageView
+        android:id="@+id/addbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        app:border_width ="4dp"
+        app:border_color ="@color/white"
+        app:cornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plus_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

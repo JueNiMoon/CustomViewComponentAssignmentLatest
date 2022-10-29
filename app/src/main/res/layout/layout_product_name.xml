@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtProductName"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/color_hint_text"
+
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:hint="Product Name"
+            android:text="Create Additional Pages"
+            android:textColor="@color/white"
+            android:cursorVisible="true"
+            android:textColorHint="@color/color_hint_text"
+            android:layout_height="wrap_content"
+            android:background="@color/color_background_create_task">
+            <requestFocus/>
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_Project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtProductName"
+        android:layout_marginLeft="10dp"
+        android:text="PROJECT NAME"
+        android:textColor="@color/white"
+        tools:textColor="@color/black" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_from_date"
+        android:layout_below="@id/txt_Project_name"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="@dimen/margin_medium_3_22"
+        android:textColorHint="@color/color_hint_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24_white"
+            android:text="  Dec 24 ,2019"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24_white"
+            android:textColorHint="@color/color_hint_text"
+            android:textColor="@color/white"
+            android:background="@color/color_background_create_task"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_to_date"
+        android:layout_below="@id/txt_Project_name"
+        android:layout_toEndOf="@id/txt_from_date"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/color_hint_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:text=" Dec 30 ,2019"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24_white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/color_hint_text"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24_white"
+            android:cursorVisible="true"
+            android:layout_height="wrap_content"
+            android:background="@color/color_background_create_task"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

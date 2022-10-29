@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar_view_pod" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCreateAdditional"
+        android:layout_below="@id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_heading_1x"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/lbl_create_additional_npages" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_regular"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textStyle="bold"
+        android:text="03 days |  Dec 18 ,2019"
+        android:layout_below="@id/txtCreateAdditional"/>
+
+    <include
+        android:id="@+id/iv_recycler"
+        layout="@layout/profile_group_layout"/>
+
+    <com.example.customviewcomponentassignment.views.component.SmartRecyclerView
+        android:id="@+id/rv_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:listitem="@layout/user_item"/>
+
+</LinearLayout>

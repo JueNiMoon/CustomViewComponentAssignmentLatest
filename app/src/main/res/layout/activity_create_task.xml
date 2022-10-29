@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.CreateTaskActivity"
+    android:background="@color/color_background_create_task">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionBarViewPod"
+        layout="@layout/action_bar_view_pod" />
+
+    <include android:id="@+id/layout_client"
+        layout="@layout/client_layout"/>
+
+    <include android:id="@+id/layout_btn"
+        layout="@layout/layout_product_name"/>
+
+    <include android:id="@+id/rv_createtask"
+        android:background="@color/color_background_create_task"
+        layout="@layout/profile_group_layout"/>
+
+
+    <include android:id="@+id/layout_btn"
+        layout="@layout/category_btn_layout"
+        />
+
+    <include android:id="@+id/layout_description"
+        layout="@layout/description_layout"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

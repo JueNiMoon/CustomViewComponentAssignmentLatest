@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.customviewcomponentassignment.viewpod.ActionBarViewPod
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_small"
+    android:layout_height="?attr/actionBarSize">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24_black" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtOMPDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_toEndOf="@id/iv_back"
+        android:text="@string/lbl_omp_dashboard"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/btn_in_progress_orange"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingRight="@dimen/margin_large"
+        android:text="@string/in_progress_lbl"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"/>
+
+</com.example.customviewcomponentassignment.viewpod.ActionBarViewPod>

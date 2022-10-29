@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularProgressBar">
+        <attr name="mProgressColor" format="color" />
+        <attr name="mProgress" format="integer" />
+        <attr name="mTextColor" format="color" />
+        <attr name="mStrokeWidth" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+
+        <declare-styleable name="StraightProgressView">
+            <attr name="strProgress" format= "integer"></attr>
+            <attr name="color" format="color"/>
+<!--            <attr name="stroke_width" format="dimension"/>-->
+<!--            <attr name="stroke_height" format="dimension"/>-->
+        </declare-styleable>
+
+</resources>

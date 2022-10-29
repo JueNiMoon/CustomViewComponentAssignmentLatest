@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CustomViewComponentAssignment</string>
+    <string name="in_progress_lbl">In Progress</string>
+    <string name="lbl_omp_dashboard">OMP Dashboard</string>
+    <string name="lbl_create_additional_npages">Create additional \npages</string>
+    <string name="lbl_closed_tasks">Closed tasks</string>
+    <string name="lbl_name">Zachary Butler</string>
+    <string name="lbl_job_title">UI Designer</string>
+</resources>
